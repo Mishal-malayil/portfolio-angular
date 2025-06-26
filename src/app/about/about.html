@@ -1,0 +1,55 @@
+<p></p>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+              <img src="assets/mishalimage1.png">
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" >About me</h1>
+                <p>
+    Hello! I'm <strong>Mishal</strong>, a passionate web developer based in India. I specialize in creating modern, responsive websites using Angular, HTML, CSS, and JavaScript.
+  I’ve worked on various projects ranging from landing pages to dynamic web applications. I enjoy solving problems and turning ideas into real-world solutions.
+  I'm always eager to learn new technologies and improve my skills. I love clean code, minimal UI design, and performance optimization.
+  <strong>Technologies I work with:</strong> Angular, TypeScript, Bootstrap, Git, Firebase.
+  Outside of coding, I enjoy photography, gaming,playing football and exploring tech gadgets.</p>
+        
+        <div  class="tab-titles">
+            
+              <p class="tab-links" [class.active-link]="selectedTab === 'skills'" (click)="setTab('skills')">Skills</p>
+  <p class="tab-links" [class.active-link]="selectedTab === 'experience'" (click)="setTab('experience')">Experience</p>
+  <p class="tab-links" [class.active-link]="selectedTab === 'education'" (click)="setTab('education')">Education</p>
+        </div>
+
+            <div class="tab-component" [class.active-tab]="selectedTab === 'skills'" *ngIf="selectedTab === 'skills'">
+                <ul>
+                   <li>Angular</li>
+                   <li>HTML5,CSS & Tailwind CSS</li>
+                   <li>JavaScript / TypeScript</li>
+                   <li>Bootstrap</li>
+                   <li>Git & GitHub</li>
+                   <li>Responsive Web Design</li>
+                   
+                </ul>
+            </div>
+            <div class="tab-component" [class.active-tab]="selectedTab === 'experience'" *ngIf="selectedTab === 'experience'">
+                <ul>
+                   <li><span>2025 May-July</span><br>Front-End Development using Angular. <br>EM.MINCETECH ,KINFRA TECHNO PARK,Kakkanchery </li>
+                   <li><span>2024 Aug- 2025 Feb</span><br>CHARITY Mobile Application <br> usning Python(Django),Flutter. <br>REGIONAL TECHNOLOGIES,Calicut</li>
+                   
+                </ul>
+            </div>
+            <div class="tab-component" [class.active-tab]="selectedTab === 'education'" *ngIf="selectedTab === 'education'">
+                <ul>
+                   <li><span>2022-2025</span><br>BCA ,ISS Arts & Science College Perinthalmanna </li>
+                   <li><span>2020-2022</span><br>Higher Secondary Education (Computer Science), THSS Angadippuram</li>
+                   <li><span>2019-2020</span><br>SSLC ,AMHSS Thirurkkad</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+   </div>
+

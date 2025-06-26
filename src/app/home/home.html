@@ -1,0 +1,162 @@
+<div id="home">
+    <div class="container">
+<div class="text-header">
+  <p>UI/UX Designer</p>
+  <h1>Hi,Iam Mohammed <br><span>Mishal</span> .M</h1>
+  <p>Front-End Developer</p>
+   
+  
+</div>
+</div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+              <img src="assets/mishalimage1.png">
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" >About me</h1>
+                <p>
+    Hello! I'm <strong>Mishal</strong>, a passionate web developer based in India. I specialize in creating modern, responsive websites using Angular, HTML, CSS, and JavaScript.
+  I’ve worked on various projects ranging from landing pages to dynamic web applications. I enjoy solving problems and turning ideas into real-world solutions.
+  I'm always eager to learn new technologies and improve my skills. I love clean code, minimal UI design, and performance optimization.
+  <strong>Technologies I work with:</strong> Angular, TypeScript, Bootstrap, Git, Firebase.
+  Outside of coding, I enjoy photography, gaming,playing football and exploring tech gadgets.</p>
+        
+        <div  class="tab-titles">
+            
+              <p class="tab-links" [class.active-link]="selectedTab === 'skills'" (click)="setTab('skills')">Skills</p>
+  <p class="tab-links" [class.active-link]="selectedTab === 'experience'" (click)="setTab('experience')">Experience</p>
+  <p class="tab-links" [class.active-link]="selectedTab === 'education'" (click)="setTab('education')">Education</p>
+        </div>
+
+            <div class="tab-component" [class.active-tab]="selectedTab === 'skills'" *ngIf="selectedTab === 'skills'">
+                <ul>
+                   <li>Angular</li>
+                   <li>HTML5,CSS & Tailwind CSS</li>
+                   <li>JavaScript / TypeScript</li>
+                   <li>Bootstrap</li>
+                   <li>Git & GitHub</li>
+                   <li>Responsive Web Design</li>
+                   
+                </ul>
+            </div>
+            <div class="tab-component" [class.active-tab]="selectedTab === 'experience'" *ngIf="selectedTab === 'experience'">
+                <ul>
+                   <li><span>2025 May-July</span><br>Front-End Development using Angular. <br>EM.MINCETECH ,KINFRA TECHNO PARK,Kakkanchery </li>
+                   <li><span>2024 Aug- 2025 Feb</span><br>CHARITY Mobile Application <br> usning Python(Django),Flutter. <br>REGIONAL TECHNOLOGIES,Calicut</li>
+                   
+                </ul>
+            </div>
+            <div class="tab-component" [class.active-tab]="selectedTab === 'education'" *ngIf="selectedTab === 'education'">
+                <ul>
+                   <li><span>2022-2025</span><br>BCA ,ISS Arts & Science College Perinthalmanna </li>
+                   <li><span>2020-2022</span><br>Higher Secondary Education (Computer Science), THSS Angadippuram</li>
+                   <li><span>2019-2020</span><br>SSLC ,AMHSS Thirurkkad</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+   </div>
+
+
+    <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I build responsive and modern websites using Angular, HTML, CSS, and TypeScript. </p>
+                <a href="#" >Learn more</a>
+            </div>
+             <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>I design clean, user-friendly interfaces with attention to usability and accessibility. </p>
+                <a href="#">Learn more</a>
+            </div>
+             <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I design clean, modern, and user-friendly mobile app interfaces using UI/UX principles. I focus on intuitive layouts, smooth user flows, and consistent visual design </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+   </div>
+
+    <div id="portfolio">
+
+     <div class="container">
+          <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/work1.jpg">
+                    <div class="layer">
+                        <h3>Angular Portfolio Website</h3>
+                         <p>A responsive personal portfolio built with Angular 20, TypeScript.</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                  <div class="work">
+                    <img src="assets/work2.jpg">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                    <p>Responsive HTML,CSS,JavaScript frontend with cart, login, and Firebase backend.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                  <div class="work">
+                    <img src="assets/work3.jpg">
+                    <div class="layer">
+                        <h3>Charity Mobile App</h3>
+                        <p>A cross-platform Flutter application that helps users find NGOs, donate securely, track donation history, and support social causes directly from their smartphones.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+     </div>
+
+
+   </div>
+
+
+         <div id="contact">
+        <div class="container">
+           <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">Contact Me</h2>
+                <p><i class=" fa-solid fa-envelope"></i>{{email}}</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9995683020</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/_mi_shal___"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100069007091454"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/mishalmalayil"><i class="fa-brands fa-telegram"></i></a>
+                    
+                    <a href="https://wa.me/+919995683020"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="" class="btn1">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+            </div>
+           </div>
+        </div>
+        
+      </div>
+      <div class="copy-right">
+            <p>©COPYRIGHTS.ALL RIGHTS RESERVED </p><br>
+            <p>Designed by <b> Mishal</b></p>
+        </div>

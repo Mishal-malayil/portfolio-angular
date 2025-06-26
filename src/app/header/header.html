@@ -1,0 +1,15 @@
+<div class="container">
+    <nav>
+        <h3><span class="first-letter">M</span>ishal</h3>
+        <ul id="sidemenu" #sidemenu class="side-menu">
+            <li [routerLink]="['/']"> Home</li>
+            <li [routerLink]="['/about']">About</li>
+            <li [routerLink]="['/service']">Service </li>
+            <li [routerLink]="['/portfolio']">Portfolio</li>
+            <li [routerLink]="['/contact']">Contact</li>
+            <i id="fs" class="fas fa-times" (click)="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" (click)="openmenu()"></i>
+    </nav>
+    
+</div>

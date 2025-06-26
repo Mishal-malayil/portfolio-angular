@@ -1,0 +1,98 @@
+.container{
+    padding: 10px 10%;
+   
+}
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin: 10px 20px;
+    
+    
+}
+nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: rgb(218, 0, 65);
+  bottom: -6px;
+  left: 0;
+  transition: 0.5s;
+}
+nav ul li:hover::after {
+  width: 100%;
+}
+
+.first-letter{
+    color: rgb(218, 0, 65);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+
+
+
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    
+    
+    .text-header{
+            margin-top: 100%;
+            font-size: 16px;
+    }
+    .text-header h1{
+        font-size: 35px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25 px;
+        margin-top: 15px;
+    }
+    nav ul{
+        position: fixed;
+        background: rgb(218, 0, 65);
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+        text-align: start;
+        
+        
+        
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        color: #000000;
+        font-size: 25px;
+        cursor: pointer;
+        
+    }
+    nav ul li a{
+        color: black;
+    }
+    
+  }
