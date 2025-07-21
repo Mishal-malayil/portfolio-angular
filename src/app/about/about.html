@@ -18,8 +18,8 @@
         <div  class="tab-titles">
             
               <p class="tab-links" [class.active-link]="selectedTab === 'skills'" (click)="setTab('skills')">Skills</p>
-  <p class="tab-links" [class.active-link]="selectedTab === 'experience'" (click)="setTab('experience')">Experience</p>
-  <p class="tab-links" [class.active-link]="selectedTab === 'education'" (click)="setTab('education')">Education</p>
+              <p class="tab-links" [class.active-link]="selectedTab === 'experience'" (click)="setTab('experience')">Experience</p>
+              <p class="tab-links" [class.active-link]="selectedTab === 'education'" (click)="setTab('education')">Education</p>
         </div>
 
             <div class="tab-component" [class.active-tab]="selectedTab === 'skills'" *ngIf="selectedTab === 'skills'">
